@@ -1,7 +1,7 @@
 # Data Folder (Important)
 
 ## What’s in here
-- `clinical_audit_seed_data.csv`: the original 21-row seed dataset.
+- `clinical_audit_seed_data.csv`: the original 21-row seed dataset gotten from a Medical Laboratory Centre
 - `large_audit_dataset.csv`: a 1,000-row augmented dataset created via sampling + jittering a local seed.
 - `final_audit_results.csv`: the latest row-level audit output produced by the pipeline.
 
