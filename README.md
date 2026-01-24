@@ -49,6 +49,6 @@ python3 scripts/audit_pipeline.py --n 1000 --sleep-s 0.1
 ## Outputs
 
 - `data/large_audit_dataset.csv`: committed (synthetic 1,000-row dataset)
-- `data/final_audit_results.csv`: generated locally (git-ignored by default)
-- `results_chart.png`: generated chart
+- `data/final_audit_results.csv`: committed (latest audit run output)
+- `results_chart.png`: produced chart
 

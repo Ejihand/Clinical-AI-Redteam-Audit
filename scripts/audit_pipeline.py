@@ -93,7 +93,7 @@ def jitter_numeric_series(values: pd.Series, rng: np.random.Generator, pct: floa
     return pd.Series(out, index=values.index)
 
 
-def generate_large_dataset(
+def create_large_dataset(
     seed_df: pd.DataFrame,
     n_rows: int,
     rng_seed: int,
@@ -393,7 +393,7 @@ def analyze_and_plot(results_df: pd.DataFrame, chart_png_path: str) -> None:
 def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Clinical AI Safety Audit Pipeline (seed -> synthetic -> Ollama audit -> score -> chart)")
     p.add_argument("--seed-csv", default=SEED_CSV_DEFAULT, help="Path to seed CSV (default: data/clinical_audit_seed_data.csv)")
-    p.add_argument("--n", type=int, default=1000, help="Number of synthetic rows to generate")
+    p.add_argument("--n", type=int, default=1000, help="Number of synthetic rows to create")
     p.add_argument("--rng-seed", type=int, default=42, help="RNG seed for reproducibility")
     p.add_argument("--jitter-pct", type=float, default=0.02, help="Jitter percentage (0.02 = ±2%)")
     p.add_argument("--large-csv", default=LARGE_CSV_DEFAULT, help="Output path for synthetic dataset (default: data/large_audit_dataset.csv)")
@@ -405,7 +405,7 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p.add_argument("--temperature", type=float, default=0.0, help="Ollama temperature (0.0 for deterministic)")
     p.add_argument("--sleep-s", type=float, default=0.0, help="Sleep seconds between Ollama calls")
     p.add_argument("--limit", type=int, default=None, help="Only audit first N rows (for quick tests)")
-    p.add_argument("--offline-mock", action="store_true", help="Do not call Ollama; generate mock AI outputs (for pipeline smoke tests)")
+    p.add_argument("--offline-mock", action="store_true", help="Do not call Ollama; create mock AI outputs (for pipeline smoke tests)")
     return p.parse_args(argv)
 
 
@@ -413,7 +413,7 @@ if __name__ == "__main__":
     args = parse_args()
 
     seed_df = load_seed(args.seed_csv)
-    large_df = generate_large_dataset(
+    large_df = create_large_dataset(
         seed_df=seed_df,
         n_rows=args.n,
         rng_seed=args.rng_seed,
