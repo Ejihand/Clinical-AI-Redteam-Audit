@@ -1,6 +1,6 @@
 # Clinical AI Audit (Red Teaming Pipeline)
 
-End-to-end pipeline for red teaming a clinical AI model using a seeded dataset, synthetic augmentation, and Ollama (Llama 3), culminating in a chart suitable for sharing.
+End-to-end pipeline for red teaming a clinical AI model using a seeded dataset, data augmentation, and Ollama (Llama 3), culminating in a chart suitable for sharing.
 
 ## Repository structure
 
@@ -48,7 +48,14 @@ python3 scripts/audit_pipeline.py --n 1000 --sleep-s 0.1
 
 ## Outputs
 
-- `data/large_audit_dataset.csv`: committed (synthetic 1,000-row dataset)
+- `data/large_audit_dataset.csv`: committed (1,000-row augmented dataset)
 - `data/final_audit_results.csv`: committed (latest audit run output)
 - `results_chart.png`: produced chart
 
+## Seed data note
+
+This repo does **not** commit the original seed file. To run the pipeline end-to-end, place your seed CSV at:
+
+- `data/clinical_audit_seed_data.csv`
+
+Or pass a custom path via `--seed-csv`.
