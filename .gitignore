@@ -12,9 +12,6 @@ __pycache__/
 # Prevent accidental commits if someone creates these at repo root
 /large_audit_dataset.csv
 
-# Seed data (keep local; do not publish)
-data/clinical_audit_seed_data.csv
-
 # Windows/NTFS ADS artifacts sometimes appear as :Zone.Identifier
 *:Zone.Identifier
 

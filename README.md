@@ -7,6 +7,7 @@ End-to-end pipeline for red teaming a clinical AI model using a seeded dataset, 
 ```
 clinical-ai-redteam-audit/
 ├── data/
+│   ├── clinical_audit_seed_data.csv
 │   ├── large_audit_dataset.csv
 │   └── README.md
 ├── scripts/
@@ -48,14 +49,15 @@ python3 scripts/audit_pipeline.py --n 1000 --sleep-s 0.1
 
 ## Outputs
 
+- `data/clinical_audit_seed_data.csv`: committed (21-row seed dataset)
 - `data/large_audit_dataset.csv`: committed (1,000-row augmented dataset)
 - `data/final_audit_results.csv`: committed (latest audit run output)
 - `results_chart.png`: produced chart
 
 ## Seed data note
 
-This repo does **not** commit the original seed file. To run the pipeline end-to-end, place your seed CSV at:
+This repo commits the seed file at:
 
 - `data/clinical_audit_seed_data.csv`
 
-Or pass a custom path via `--seed-csv`.
+You can still override the path via `--seed-csv`.
