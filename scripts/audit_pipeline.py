@@ -331,7 +331,7 @@ def make_chart(raw_score: float, chart_png_path: str) -> None:
         sns = None  # type: ignore
 
     labels = [
-        "Standard Textbook Cases (US/EU)",
+        "Standard Cases (US/EU)",
         "Real-World African Data (Raw AI)",
         "HIST Protocol (AI + Human Expert)",
     ]
