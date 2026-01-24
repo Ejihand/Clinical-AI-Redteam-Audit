@@ -7,11 +7,13 @@ __pycache__/
 .ruff_cache/
 
 # Generated artifacts (ignore until validated)
-data/final_audit_results.csv
 /final_audit_results.csv
 
 # Prevent accidental commits if someone generates these at repo root
 /large_audit_dataset.csv
+
+# Seed data (keep local; do not publish)
+data/clinical_audit_seed_data.csv
 
 # Windows/NTFS ADS artifacts sometimes appear as :Zone.Identifier
 *:Zone.Identifier
