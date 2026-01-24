@@ -1,0 +1,10 @@
+numpy>=1.24
+pandas>=2.0
+requests>=2.31
+matplotlib>=3.7
+seaborn>=0.13
+
+# NOTE:
+# - Ollama is a system dependency (not installable via pip/requirements.txt).
+#   Install from https://ollama.com/download and ensure the `ollama` CLI is available.
+# - The `llama3` model is pulled via: `ollama pull llama3`
