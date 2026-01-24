@@ -1,10 +1,19 @@
-# Clinical AI Red Team Audit (End-to-End)
+# Clinical AI Audit (Red Teaming Pipeline)
 
-This repo contains a Python pipeline that:
-- Generates a 1,000-row synthetic audit dataset from `clinical_audit_seed_data.csv` (with ±2% jitter on Na/K/Cl/Urea/Creat/pH)
-- Audits each case against a local Ollama Llama 3 model
-- Grades outputs using the HIST protocol
-- Produces a scorecard and a LinkedIn-ready chart
+End-to-end pipeline for red teaming a clinical AI model using a seeded dataset, synthetic augmentation, and Ollama (Llama 3), culminating in a chart suitable for sharing.
+
+## Repository structure
+
+```
+clinical-ai-redteam-audit/
+├── data/
+│   ├── large_audit_dataset.csv
+│   └── README.md
+├── scripts/
+│   └── audit_pipeline.py
+├── results_chart.png
+└── README.md
+```
 
 ## Setup (recommended)
 
@@ -17,7 +26,7 @@ pip install -r requirements.txt
 
 ## Ollama
 
-Ollama is a system dependency (not installable via pip). Install it and pull the model:
+Ollama is a system dependency (not installable via pip). Install it, then pull the model:
 
 ```bash
 ollama pull llama3
@@ -25,22 +34,21 @@ ollama pull llama3
 
 ## Run
 
-Quick pipeline smoke test (no Ollama calls):
+Quick smoke test (no Ollama calls):
 
 ```bash
-python3 run_clinical_audit_pipeline.py --offline-mock --n 50 --limit 20
+python3 scripts/audit_pipeline.py --offline-mock --n 1000 --limit 20
 ```
 
 Full run (1,000 cases via Ollama):
 
 ```bash
-python3 run_clinical_audit_pipeline.py --n 1000 --sleep-s 0.1
+python3 scripts/audit_pipeline.py --n 1000 --sleep-s 0.1
 ```
 
 ## Outputs
 
-Generated outputs are currently git-ignored until validation:
-- `large_audit_dataset.csv`
-- `final_audit_results.csv`
-- `clinical_ai_safety_chart.png`
+- `data/large_audit_dataset.csv`: committed (synthetic 1,000-row dataset)
+- `data/final_audit_results.csv`: generated locally (git-ignored by default)
+- `results_chart.png`: generated chart
 

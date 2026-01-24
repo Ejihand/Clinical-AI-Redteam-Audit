@@ -3,12 +3,12 @@
 End-to-end Clinical AI "Red Teaming" Audit Pipeline
 
 Inputs:
-  - clinical_audit_seed_data.csv (21 rows)
+  - data/clinical_audit_seed_data.csv (21 rows)
 
 Outputs:
-  - large_audit_dataset.csv (1,000 rows; jittered Na/K/Cl/Urea/Creat/pH)
-  - final_audit_results.csv (row-level audit results)
-  - clinical_ai_safety_chart.png (LinkedIn-ready chart)
+  - data/large_audit_dataset.csv (1,000 rows; jittered Na/K/Cl/Urea/Creat/pH)
+  - data/final_audit_results.csv (row-level audit results; git-ignored by default)
+  - results_chart.png (LinkedIn-ready chart)
 """
 
 from __future__ import annotations
@@ -29,10 +29,10 @@ import pandas as pd
 import requests
 
 
-SEED_CSV_DEFAULT = "clinical_audit_seed_data.csv"
-LARGE_CSV_DEFAULT = "large_audit_dataset.csv"
-RESULTS_CSV_DEFAULT = "final_audit_results.csv"
-CHART_PNG_DEFAULT = "clinical_ai_safety_chart.png"
+SEED_CSV_DEFAULT = "data/clinical_audit_seed_data.csv"
+LARGE_CSV_DEFAULT = "data/large_audit_dataset.csv"
+RESULTS_CSV_DEFAULT = "data/final_audit_results.csv"
+CHART_PNG_DEFAULT = "results_chart.png"
 
 NUMERIC_COLS = ["Na", "K", "Cl", "Urea", "Creat", "pH"]
 DO_NOT_JITTER_COLS = ["Visual_Artifacts", "Prov_Diagnosis", "Expert Truth"]
@@ -392,13 +392,13 @@ def analyze_and_plot(results_df: pd.DataFrame, chart_png_path: str) -> None:
 
 def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Clinical AI Safety Audit Pipeline (seed -> synthetic -> Ollama audit -> score -> chart)")
-    p.add_argument("--seed-csv", default=SEED_CSV_DEFAULT, help="Path to clinical_audit_seed_data.csv")
+    p.add_argument("--seed-csv", default=SEED_CSV_DEFAULT, help="Path to seed CSV (default: data/clinical_audit_seed_data.csv)")
     p.add_argument("--n", type=int, default=1000, help="Number of synthetic rows to generate")
     p.add_argument("--rng-seed", type=int, default=42, help="RNG seed for reproducibility")
     p.add_argument("--jitter-pct", type=float, default=0.02, help="Jitter percentage (0.02 = ±2%)")
-    p.add_argument("--large-csv", default=LARGE_CSV_DEFAULT, help="Output path for large_audit_dataset.csv")
-    p.add_argument("--results-csv", default=RESULTS_CSV_DEFAULT, help="Output path for final_audit_results.csv")
-    p.add_argument("--chart-png", default=CHART_PNG_DEFAULT, help="Output path for clinical_ai_safety_chart.png")
+    p.add_argument("--large-csv", default=LARGE_CSV_DEFAULT, help="Output path for synthetic dataset (default: data/large_audit_dataset.csv)")
+    p.add_argument("--results-csv", default=RESULTS_CSV_DEFAULT, help="Output path for audit results (default: data/final_audit_results.csv)")
+    p.add_argument("--chart-png", default=CHART_PNG_DEFAULT, help="Output path for chart (default: results_chart.png)")
     p.add_argument("--ollama-host", default=os.environ.get("OLLAMA_HOST", "http://localhost:11434"), help="Ollama host, e.g. http://localhost:11434")
     p.add_argument("--model", default=os.environ.get("OLLAMA_MODEL", "llama3"), help="Ollama model name (default: llama3)")
     p.add_argument("--timeout-s", type=float, default=90.0, help="HTTP timeout seconds for Ollama calls")
