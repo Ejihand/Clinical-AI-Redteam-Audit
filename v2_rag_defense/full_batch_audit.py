@@ -475,7 +475,7 @@ def main() -> None:
     print(f"SOPs Loaded ({len(sops)} characters of rules injected).")
 
     # Process batch (use .head() for quick testing, remove for full run)
-    test_batch = df.head(50).copy()
+    test_batch = df.copy()
     print(f"\nAuditing the first {len(test_batch)} cases...")
 
     start_time = time.time()
