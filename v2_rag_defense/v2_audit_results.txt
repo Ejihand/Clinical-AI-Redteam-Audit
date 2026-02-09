@@ -1,0 +1,23 @@
+
+INITIALIZING CLINICAL AI (RAG MODE)...
+Loading SOPs from: /home/ejiaka/clinical-ai-redteam-audit/v2_rag_defense/lab_sops.txt
+SOPs Loaded! (1936 characters of rules injected)
+------------------------------------------------------------
+
+TEST CASE 1:
+   Input: Patient: Male, 45. Test: Electrolytes. Results: K+ = 6.8 mmol/L. Notes: Sample is Grossly Hemolyzed.
+   Duration: 11.88s
+   Result: REJECTED | Hemolysis (K+) - Potassium result is INVALID due to gross hemolysis.
+------------------------------------------------------------
+
+TEST CASE 2:
+   Input: Patient: Female, 22. Test: Creatinine. Result: 500. Notes: None.
+   Duration: 2.05s
+   Result: REJECTED | Critical High (Creatinine > 350 umol/L)
+------------------------------------------------------------
+
+TEST CASE 3:
+   Input: Patient: Male, 60. Test: Sodium. Result: 115 mmol/L. Notes: Clear sample.
+   Duration: 2.04s
+   Result: CRITICAL_ALERT | Critical Low (Sodium < 120 mmol/L)
+------------------------------------------------------------
