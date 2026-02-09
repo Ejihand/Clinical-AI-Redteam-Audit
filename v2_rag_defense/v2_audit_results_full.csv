@@ -1,0 +1,201 @@
+Seed_Case_ID,Case_ID,Age_Sex,Country,Prov_Diagnosis,Visual_Artifacts,Na,K,Cl,Urea,Creat,pH,Expert Truth,v2_ai_response,v2_ai_status,v2_ai_reason,v2_grade,v2_grade_reason,v2_duration_seconds
+Case_007,Synth_000001,60F,Nigeria,Unknown,Yellow & Clear,134.65963782670616,3.812032194135032,106.03399055748626,5.369794881935061,105.8067554768841,7.5736409101495,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""The sample's visual appearance is yellow and clear, indicating no hemolysis or lipemia issues. The lab results are within normal ranges for sodium, potassium, chloride, urea, and creatinine.""
+}",NORMAL,"The sample's visual appearance is yellow and clear, indicating no hemolysis or lipemia issues. The lab results are within normal ranges for sodium, potassium, chloride, urea, and creatinine.",PASS,AI label matches Expert Truth.,21.269664525985718
+Case_020,Synth_000002,43M,Nigeria,Unknown,Yellow & Clear,136.1662762810462,4.013288536279071,101.78126912794632,2.810538750538533,91.97132770481748,7.6797255342111,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""The lab results are within the normal ranges for Sodium, Potassium, Chloride, Urea, and Creatinine, with no visual artifacts indicating sample integrity problems.""
+}",NORMAL,"The lab results are within the normal ranges for Sodium, Potassium, Chloride, Urea, and Creatinine, with no visual artifacts indicating sample integrity problems.",PASS,AI label matches Expert Truth.,5.166187047958374
+Case_015,Synth_000003,38F,Nigeria,Medical Checkup,Yellow & Clear,137.95077268431794,3.398806147891122,107.00430757919868,3.167341407640796,92.07798405207146,7.792300092861388,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.962064266204834
+Case_011,Synth_000004,Adult Female,Nigeria,Annual screening,Yellow & Clear,138.0815767992453,3.5302131848945653,103.72187688799592,4.342256100113572,86.09860051771565,7.538124005309502,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.997830629348755
+Case_008,Synth_000005,47F,Nigeria,Unknown,Yellow & Clear,132.218297422244,4.131747294462167,101.4175033251153,2.556786013150416,86.53268790173938,7.598778524546187,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""The lab results are within normal ranges for Sodium, Potassium, Chloride, Urea, and Creatinine, with no visual artifacts indicating sample integrity problems.""
+}",NORMAL,"The lab results are within normal ranges for Sodium, Potassium, Chloride, Urea, and Creatinine, with no visual artifacts indicating sample integrity problems.",PASS,AI label matches Expert Truth.,5.269551753997803
+Case_021,Synth_000006,45M,Nigeria,Unknown,Lipemic,132.77894369673078,2.698393329246213,100.62650860533104,2.9318324687960584,83.23491744022704,7.65146540674245,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.326355218887329
+Case_007,Synth_000007,60F,Nigeria,Unknown,Yellow & Clear,134.5913523322046,3.945471500264056,104.55508555843603,5.319076867115519,104.880281386355,7.743960979948082,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""The sample's visual appearance is yellow and clear, indicating no hemolysis or lipemia issues. The lab results are within normal ranges for sodium, potassium, chloride, urea, and creatinine.""
+}",NORMAL,"The sample's visual appearance is yellow and clear, indicating no hemolysis or lipemia issues. The lab results are within normal ranges for sodium, potassium, chloride, urea, and creatinine.",PASS,AI label matches Expert Truth.,6.059217929840088
+Case_019,Synth_000008,39F,Nigeria,Unknown,Lipemic,136.64589150571666,3.603741523017092,98.6651224277635,5.61125107259438,110.34444009418726,7.706198941619918,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.852815389633179
+Case_011,Synth_000009,Adult Female,Nigeria,Annual screening,Yellow & Clear,134.962062707062,3.612388994384575,101.667694111962,4.227674956851887,85.8222936128129,7.7016950537587,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,4.134460926055908
+Case_011,Synth_000010,Adult Female,Nigeria,Annual screening,Yellow & Clear,136.7281149396677,3.5744294383981825,103.87338994839313,4.343143849351071,87.39053735210621,7.610307702301973,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.776291847229004
+Case_021,Synth_000011,45M,Nigeria,Unknown,Lipemic,129.62659930230024,2.727338721042414,97.3057846166757,2.875980565154445,83.50348653421669,7.588681293283642,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.205881595611572
+Case_004,Synth_000012,36M,Nigeria,Unknown,Yellow & Clear,140.05062155857811,3.463757959226806,102.51735181168354,2.843601807285928,76.28695946453665,7.809914999104797,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.8460865020751953
+Case_008,Synth_000013,47F,Nigeria,Unknown,Yellow & Clear,135.17341888555367,4.10552568512158,101.51592487273584,2.627255594187138,87.88527907246683,7.648471618784752,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.787668228149414
+Case_003,Synth_000014,79F,Nigeria,Unknown,Yellow & Clear,144.84619642790915,2.768966647095139,105.55063968214034,10.3816543808237,82.75900696149544,7.759587947192606,ABNORMAL,"{
+""predicted_truth"": ""ABNORMAL"",
+""rationale"": ""The patient's potassium level is below the normal range (2.77 mmol/L), which may indicate hypokalemia. Additionally, the urea and creatinine levels are elevated, suggesting possible kidney dysfunction.""
+}",ABNORMAL,"The patient's potassium level is below the normal range (2.77 mmol/L), which may indicate hypokalemia. Additionally, the urea and creatinine levels are elevated, suggesting possible kidney dysfunction.",PASS,AI label matches Expert Truth.,6.229383230209351
+Case_021,Synth_000015,45M,Nigeria,Unknown,Lipemic,130.00507480428806,2.692950158874637,98.76049835218564,2.8743183021054803,84.51967943601053,7.577029308688367,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.376910924911499
+Case_002,Synth_000016,8M,Nigeria,Severe Malaria,Yellow & Clear,133.32927118786353,3.652230854184893,97.08488056659276,5.74763935033693,24.948070786465927,7.536544033081159,REQUEST_UNITS,"{
+""predicted_truth"": ""ABNORMAL"",
+""rationale"": ""The patient's creatinine level is elevated (24.9 umol/L) and above the critical high limit (> 20 mmol/L), indicating possible acute kidney injury. Additionally, the urea level is also elevated (5.75 mmol/L).""
+}",ABNORMAL,"The patient's creatinine level is elevated (24.9 umol/L) and above the critical high limit (> 20 mmol/L), indicating possible acute kidney injury. Additionally, the urea level is also elevated (5.75 mmol/L).",FAIL,Expert says REQUEST_UNITS but AI did not request units.,7.310460090637207
+Case_012,Synth_000017,Adult Female,Nigeria,Unknown,Yellow & Clear,142.00938657280574,3.454434505152713,104.7683023994455,8.550577621996984,107.02163277291882,7.65200270216684,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.855689525604248
+Case_006,Synth_000018,75F,Nigeria,Hyperglycemia,Yellow & Clear,140.7015452429647,3.599133073705723,103.4270957728184,5.803608120911455,129.55479090062576,7.496012980243048,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.7337427139282227
+Case_002,Synth_000019,8M,Nigeria,Severe Malaria,Yellow & Clear,136.566587279384,3.631957553511109,97.44381809335653,5.6603650823768135,24.489386831950306,7.630658210427737,REQUEST_UNITS,"{
+""predicted_truth"": ""ABNORMAL"",
+""rationale"": ""The patient's creatinine level is elevated (24.5 umol/L) and above the critical high limit (> 20 mmol/L), indicating possible acute kidney injury. Additionally, the urea level is also elevated (5.66 mmol/L).""
+}",ABNORMAL,"The patient's creatinine level is elevated (24.5 umol/L) and above the critical high limit (> 20 mmol/L), indicating possible acute kidney injury. Additionally, the urea level is also elevated (5.66 mmol/L).",FAIL,Expert says REQUEST_UNITS but AI did not request units.,7.335741996765137
+Case_021,Synth_000020,45M,Nigeria,Unknown,Lipemic,130.98623484822423,2.7045401834250185,98.59941816342564,2.869221982793545,85.04612293205534,7.650808003433374,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual artifact of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual artifact of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.36054801940918
+Case_001,Synth_000021,Adult Male,Nigeria,Unknown,Yellow & Clear,137.20193260414376,3.494006306100976,102.6174467948594,15.135096081715604,245.93144323205263,7.758023253757281,ABNORMAL,"{
+""predicted_truth"": ""ABNORMAL"",
+""rationale"": ""The patient's creatinine level is elevated (246 umol/L), indicating possible kidney damage. Additionally, the urea level is also high (15.1 mmol/L), which may be related to the creatinine elevation.""
+}",ABNORMAL,"The patient's creatinine level is elevated (246 umol/L), indicating possible kidney damage. Additionally, the urea level is also high (15.1 mmol/L), which may be related to the creatinine elevation.",PASS,AI label matches Expert Truth.,6.591512680053711
+Case_012,Synth_000022,Adult Female,Nigeria,Unknown,Yellow & Clear,140.87545318736008,3.464247674516218,104.04544395256045,8.481423772030926,106.77419829589002,7.75401983282434,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.7983005046844482
+Case_012,Synth_000023,Adult Female,Nigeria,Unknown,Yellow & Clear,144.3679164022703,3.4974760187034746,103.64425065818324,8.391345507358931,107.29953454007192,7.766008716078412,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.9050345420837402
+Case_017,Synth_000024,60M,Nigeria,Unknown,Lipemic,137.7322889620516,3.5444481957221696,100.77505417738892,8.022633793958478,132.09232358536832,7.709735684106574,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.441561222076416
+Case_010,Synth_000025,Adult Female,Nigeria,Unknown,Hemolyzed ,136.6043844181866,2.868239511943332,101.02410356347993,1.9851323910462677,70.52654901541453,7.741582438085129,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample is marked as 'Hemolyzed' which triggers the Hemolysis Rules in Section 1: Pre-analytical Rejection Criteria, requiring rejection of the Potassium result.""
+}",REJECT_SAMPLE,"The sample is marked as 'Hemolyzed' which triggers the Hemolysis Rules in Section 1: Pre-analytical Rejection Criteria, requiring rejection of the Potassium result.",PASS,AI rejected the sample as required.,6.3873443603515625
+Case_016,Synth_000026,Adult Female,Nigeria,Unknown,Hemolyzed,135.03028445453455,3.809660971182786,101.26908479091732,6.012474581169252,70.43699786185825,7.673371117743594,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample is marked as 'Hemolyzed', which according to the SOPs, invalidates the Potassium result and requires rejection.""
+}",REJECT_SAMPLE,"The sample is marked as 'Hemolyzed', which according to the SOPs, invalidates the Potassium result and requires rejection.",PASS,AI rejected the sample as required.,5.647988796234131
+Case_015,Synth_000027,38F,Nigeria,Medical Checkup,Yellow & Clear,135.81896226027507,3.511759912753907,106.40451194236964,3.170167507064029,91.35192724079216,7.689918273223577,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,4.345353126525879
+Case_015,Synth_000028,38F,Nigeria,Medical Checkup,Yellow & Clear,133.5182924858825,3.4315542974208024,104.58642945618662,3.2460390785589746,91.39173092806854,7.655137490729143,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.9105355739593506
+Case_019,Synth_000029,39F,Nigeria,Unknown,Lipemic,133.23178041513302,3.664631755482098,100.22188648313072,5.723351067370978,111.81061875343175,7.6881896847143345,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.350001096725464
+Case_012,Synth_000030,Adult Female,Nigeria,Unknown,Yellow & Clear,142.73752146697822,3.416710836005138,106.0953839248456,8.359004194194272,109.8520256622388,7.504812742164367,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.6735000610351562
+Case_020,Synth_000031,43M,Nigeria,Unknown,Yellow & Clear,137.8364013712567,4.02994048395413,100.04907207791491,2.8324694699543858,92.5402454523002,7.479675702870544,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.744936227798462
+Case_003,Synth_000032,79F,Nigeria,Unknown,Yellow & Clear,145.67415566952369,2.743912339810344,105.86404445081308,10.120556462171423,83.81126255872081,7.79816502576888,ABNORMAL,"{
+""predicted_truth"": ""ABNORMAL"",
+""rationale"": ""The patient's sodium level is above the normal range (146 mmol/L), and potassium level is below the normal range (2.74 mmol/L). These abnormal levels may indicate a potential electrolyte imbalance.""
+}",ABNORMAL,"The patient's sodium level is above the normal range (146 mmol/L), and potassium level is below the normal range (2.74 mmol/L). These abnormal levels may indicate a potential electrolyte imbalance.",PASS,AI label matches Expert Truth.,6.37575626373291
+Case_005,Synth_000033,48M,Nigeria,Unknown,Yellow & Clear,120.15699473338866,4.911754667403966,90.83270308436217,25.44700003838421,201.12300007934127,7.481750048848219,ABNORMAL,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample is marked as 'Yellow & Clear', which indicates lipemia (Section 1: PRE-ANALYTICAL REJECTION CRITERIA, LIPEMIA RULES). As the request is for Electrolytes (Sodium/Potassium), we must REJECT the sample.""
+}",REJECT_SAMPLE,"The sample is marked as 'Yellow & Clear', which indicates lipemia (Section 1: PRE-ANALYTICAL REJECTION CRITERIA, LIPEMIA RULES). As the request is for Electrolytes (Sodium/Potassium), we must REJECT the sample.",FAIL,AI label REJECT_SAMPLE != Expert Truth ABNORMAL,8.211116075515747
+Case_019,Synth_000034,39F,Nigeria,Unknown,Lipemic,134.39996425141243,3.689108934667261,99.78480563124374,5.638463519125073,112.10652037246273,7.66759723406216,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a Visual Appearance of Lipemia, which according to the SOPs, makes spectrophotometric readings unreliable for Creatinine and Urea (Photometric) requests.""
+}",REJECT_SAMPLE,"The sample has a Visual Appearance of Lipemia, which according to the SOPs, makes spectrophotometric readings unreliable for Creatinine and Urea (Photometric) requests.",PASS,AI rejected the sample as required.,6.070944786071777
+Case_007,Synth_000035,60F,Nigeria,Unknown,Yellow & Clear,133.0377933624775,3.867475513326396,102.92760247530413,5.402897287179663,103.32238714504032,7.695232250567773,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""The lab results are within normal ranges for Sodium, Potassium, Chloride, Urea, and Creatinine, with a pH of 7.7 which is also normal.""
+}",NORMAL,"The lab results are within normal ranges for Sodium, Potassium, Chloride, Urea, and Creatinine, with a pH of 7.7 which is also normal.",PASS,AI label matches Expert Truth.,5.522498369216919
+Case_021,Synth_000036,45M,Nigeria,Unknown,Lipemic,128.6815247235473,2.7259425829187367,100.22110072223124,2.92390743555756,83.93827009571271,7.577398933248163,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.4969117641448975
+Case_009,Synth_000037,54M,Nigeria,Unknown,Hemolyzed,134.38085173311035,3.726354364995008,104.82270551333112,4.722143756041048,89.12946487665137,7.892993144532808,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample is marked as 'Hemolyzed', which according to the SOPs, invalidates the Potassium result and requires rejection.""
+}",REJECT_SAMPLE,"The sample is marked as 'Hemolyzed', which according to the SOPs, invalidates the Potassium result and requires rejection.",PASS,AI rejected the sample as required.,4.895010948181152
+Case_007,Synth_000038,60F,Nigeria,Unknown,Yellow & Clear,133.07055584693177,3.865745914909453,102.60117274551423,5.195056812642428,106.3553145199467,7.5650453444637025,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.821303129196167
+Case_018,Synth_000039,72M,Nigeria,Follow up,Lipemic,136.19581669457227,3.06263815329108,102.31319538121906,4.048226840342736,143.70019460907668,7.716892556159468,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual artifact of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual artifact of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.434021711349487
+Case_004,Synth_000040,36M,Nigeria,Unknown,Yellow & Clear,138.63533548271127,3.3983613685270955,104.49125906230466,2.8151806248129847,78.29424877931946,7.882052964031907,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.8148903846740723
+Case_014,Synth_000041,40F,Nigeria,Unknown,Yellow & Clear,136.85508973077134,3.344474420352025,100.42804034920935,2.9855663191778,97.07578029946248,7.580563640959813,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.6940035820007324
+Case_018,Synth_000042,72M,Nigeria,Follow up,Lipemic,139.53239150388657,3.0905677625624217,103.07207656390248,4.169581982923366,145.86421925446183,7.493826226547932,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.256571531295776
+Case_009,Synth_000043,54M,Nigeria,Unknown,Hemolyzed,137.4926463965243,3.773327660751458,103.54530280915716,4.749768153198651,88.48993268721219,7.712885126325881,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample is marked as 'Hemolyzed', which according to the SOPs, invalidates the Potassium result and requires rejection.""
+}",REJECT_SAMPLE,"The sample is marked as 'Hemolyzed', which according to the SOPs, invalidates the Potassium result and requires rejection.",PASS,AI rejected the sample as required.,4.92503547668457
+Case_021,Synth_000044,45M,Nigeria,Unknown,Lipemic,129.3220549348832,2.7276594130203744,100.80120067432252,2.8938965524452778,85.73192054068834,7.63869123373172,REJECT_SAMPLE,"{
+""predicted_truth"": ""REJECT_SAMPLE"",
+""rationale"": ""The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).""
+}",REJECT_SAMPLE,"The sample has a visual appearance of lipemia, which is a pre-analytical rejection criterion for spectrophotometric readings (Creatinine and Urea).",PASS,AI rejected the sample as required.,5.379286527633667
+Case_002,Synth_000045,8M,Nigeria,Severe Malaria,Yellow & Clear,136.59154484912293,3.628925433910719,98.86629866805264,5.756889414878726,24.88063765123572,7.522718541655672,REQUEST_UNITS,"{
+""predicted_truth"": ""ABNORMAL"",
+""rationale"": ""The patient's creatinine level is elevated (24.9 umol/L) and above the critical high limit (> 20 mmol/L), indicating possible acute kidney injury. Additionally, the urea level is also elevated, which further supports this diagnosis.""
+}",ABNORMAL,"The patient's creatinine level is elevated (24.9 umol/L) and above the critical high limit (> 20 mmol/L), indicating possible acute kidney injury. Additionally, the urea level is also elevated, which further supports this diagnosis.",FAIL,Expert says REQUEST_UNITS but AI did not request units.,7.072044849395752
+Case_020,Synth_000046,43M,Nigeria,Unknown,Yellow & Clear,138.16401339193254,3.9921087323016216,100.13277214511471,2.853245284268537,91.61125350881731,7.782261700679849,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.7769312858581543
+Case_015,Synth_000047,38F,Nigeria,Medical Checkup,Yellow & Clear,135.38788238192416,3.4082977589217696,104.86851834735752,3.1950055455617883,89.86109025031698,7.626624780496287,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.684343099594116
+Case_007,Synth_000048,60F,Nigeria,Unknown,Yellow & Clear,132.07221213774034,3.923169100778831,104.79659690322724,5.330215488232369,103.9142643028606,7.761306510987548,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""The lab results are within normal ranges for Sodium, Potassium, Chloride, Urea, and Creatinine, with no visual artifacts indicating sample integrity problems.""
+}",NORMAL,"The lab results are within normal ranges for Sodium, Potassium, Chloride, Urea, and Creatinine, with no visual artifacts indicating sample integrity problems.",PASS,AI label matches Expert Truth.,5.0598039627075195
+Case_012,Synth_000049,Adult Female,Nigeria,Unknown,Yellow & Clear,142.73438451653016,3.479478491071549,104.20643039000196,8.540671310660596,107.52371532369727,7.545690030609685,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""The patient's lab results are within the normal range for Sodium, Potassium, Chloride, Urea, and Creatinine, with no visual artifacts indicating sample integrity problems.""
+}",NORMAL,"The patient's lab results are within the normal range for Sodium, Potassium, Chloride, Urea, and Creatinine, with no visual artifacts indicating sample integrity problems.",PASS,AI label matches Expert Truth.,5.351586103439331
+Case_008,Synth_000050,47F,Nigeria,Unknown,Yellow & Clear,132.46330935188365,4.068354254015979,102.32549762136074,2.573862164851762,87.15174750492694,7.888683735985434,NORMAL,"{
+""predicted_truth"": ""NORMAL"",
+""rationale"": ""All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.""
+}",NORMAL,All lab results are within normal ranges and there are no visual artifacts indicating sample integrity problems.,PASS,AI label matches Expert Truth.,3.718879222869873
