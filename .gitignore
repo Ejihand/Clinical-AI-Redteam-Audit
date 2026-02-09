@@ -18,3 +18,6 @@ __pycache__/
 # OS/editor noise
 .DS_Store
 .vscode/
+
+# Personal learning/teaching materials (not for GitHub)
+audit_pipeline_explanation.py
