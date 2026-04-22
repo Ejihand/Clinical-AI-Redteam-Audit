@@ -1,4 +1,4 @@
-# Clinical AI Red Team Audit
+# Clinical AI Security
 
 A comprehensive audit framework for evaluating clinical AI systems, demonstrating both vulnerability assessment and defense mechanisms.
 
